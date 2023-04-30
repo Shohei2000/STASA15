@@ -1,0 +1,51 @@
+.choices{
+  border-radius:8px;
+  border:solid 2px;
+  border-color:#d3d3d3;
+  background:white;
+  padding:4px 0;
+}
+
+.parts{
+  display:flex;
+  align-items:center; /*上下中央揃え*/
+  justify-content: center; /*左右中央揃え*/
+  height:100%;
+  color:black;
+}  
+
+.original{
+  border-radius:40px;
+  border:solid 3px;
+  border-color:#d3d3d3;
+  background:#ff8989;
+  padding-top:11px;
+  padding-bottom:3px;
+  width:80%;
+  text-align:center;
+  margin:0 auto;    
+}  
+
+.menu{
+  border-radius:40px;
+  border:solid 3px;
+  border-color:#d3d3d3;
+  background:#89c4ff;
+  color:white;
+  padding-top:11px;
+  padding-bottom:9px;
+  margin-top:20px;
+  width:60%;
+  position:absolute;
+  right:20%;
+  left:20%;
+  top:-7%;
+}  
+
+.question{
+  border-radius:8px;
+  border:solid 5px;
+  border-color:#ff8484;
+  background:white;
+  padding:4px 0;
+}

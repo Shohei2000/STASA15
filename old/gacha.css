@@ -1,0 +1,106 @@
+/* 下地 */
+html, body {
+	height: 90%;
+	margin: 0;
+}
+
+/* 文字色統一 */
+.gacha-font {
+	color: black;
+	font-weight: bold;
+}
+
+/* ------------------------------------------- */
+
+/* メイン部分(背景画像) */
+.container-bg {
+	background: url("../img/bg_forest.jpg");
+	display: flex;
+	align-items: center;
+}
+
+.container-bg::before {
+	/* 透過した白を重ねる */
+	background-color: rgba(255, 255, 255, 0.5);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+.container-main {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+/* ------------------------------------------- */
+
+/* ガチャ画面カルーセル(スライド)用CSS */
+#myCarousel {
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+.carousel-item, .carousel-img {
+	max-width: 90vw;
+	max-height: 35vh;
+}
+
+/* ------------------------------------------- */
+
+/* 詳細ボタン */
+.detail_button, .detail_button:hover {
+	display: inline-block;
+	width: 10rem;
+	height: 3rem;
+	line-height: 3rem;
+	margin: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.row-img {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.getAnimalImage {
+	width: 80vw;
+}
+
+/* ------------------------------------------- */
+
+/* 1回と10回のガチャ画面のボタン */
+.btn--gacha, a.btn--gacha {
+	color: #fff;
+	background-color: #eb6100;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn--gacha:hover, a.btn--gacha:hover {
+	color: #fff;
+	background: #f56500;
+}
+
+/* 1回と10回ボタン用 */
+a.btn--radius {
+	border-radius: 2vh;
+	padding: 0.2rem 2rem;
+	min-height: 3rem;
+}
+
+/* モーダルウィンドウ内のOKとキャンセルのボタン用 */
+a.btn-modal {
+	border-radius: 2vh;
+	font-size: 1rem;
+	min-height: 3rem;
+	width: 45%;
+}

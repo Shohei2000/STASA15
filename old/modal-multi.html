@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex,nofollow">
+
+		<!-- ビューポートの設定 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- スタイルシートの読み込み -->
+		<link href="modal-multi.css" rel="stylesheet">
+
+		<title>複数モーダルウィンドウのデモ</title><!-- 
+
+/********************************************************************************
+
+	SYNCER 〜 知識、感動をみんなと同期(Sync)するブログ
+
+	* 注意
+	このプログラムは、jQueryを利用しています。
+
+	* 配布場所
+	https://syncer.jp/jquery-modal-window
+
+	* 動作確認
+	https://syncer.jp/jquery-modal-window/demo/modal-multi.html
+
+	* 最終更新日時
+	2015/08/17 15:38
+
+	* 作者
+	あらゆ
+
+	** 連絡先
+	Twitter: https://twitter.com/arayutw
+	Facebook: https://www.facebook.com/arayutw
+	Google+: https://plus.google.com/114918692417332410369/
+	E-mail: info@syncer.jp
+
+	※ バグ、不具合の報告、提案、ご要望など、お待ちしております。
+	※ 申し訳ありませんが、ご利用者様、個々の環境における問題はサポートしていません。
+
+********************************************************************************/
+
+		-->
+	</head>
+<body>
+
+
+
+<h1 style="text-align:center;color:#d36015;">複数モーダルウィンドウのデモ</h1>
+<p>1ページ内に複数種類のモーダルウィンドウを設置するサンプルデモです。リンクテキストをクリックすると、それぞれのリンクに対応したモーダルウィンドウが開きます。モーダルウィンドウ周りのオーバーレイをクリックすると終了します。</p>
+
+<HR style="margin: 3em 0 ;">
+
+<!-- 1つ目のコンテンツ [開始] -->
+<div id="modal-content-01" class="modal-content">
+	<!-- モーダルウィンドウのコンテンツ開始 -->
+	<p>1つ目のモーダルウィンドウです。全体を囲むdiv要素に[id="modal-content-01"]が設定されています。</p>
+	<p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+	<p><a id="modal-close" class="button-link">閉じる</a></p>
+	<!-- モーダルウィンドウのコンテンツ終了 -->
+</div>
+<!-- 1つ目のコンテンツ [終了] -->
+
+<!-- 2つ目のコンテンツ [開始] -->
+<div id="modal-content-02" class="modal-content">
+	<!-- モーダルウィンドウのコンテンツ開始 -->
+	<p>2つ目のモーダルウィンドウです。全体を囲むdiv要素に[id="modal-content-02"]が設定されています。</p>
+	<p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+	<p><a id="modal-close" class="button-link">閉じる</a></p>
+	<!-- モーダルウィンドウのコンテンツ終了 -->
+</div>
+<!-- 2つ目のコンテンツ [終了] -->
+
+<!-- 3つ目のコンテンツ [開始] -->
+<div id="modal-content-03" class="modal-content">
+	<!-- モーダルウィンドウのコンテンツ開始 -->
+	<p>3つ目のモーダルウィンドウです。全体を囲むdiv要素に[id="modal-content-03"]が設定されています。</p>
+	<p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+	<p><a id="modal-close" class="button-link">閉じる</a></p>
+	<!-- モーダルウィンドウのコンテンツ終了 -->
+</div>
+
+<p><a class="modal-syncer button-link" data-target="modal-content-01">クリックすると、1つ目のモーダルウィンドウを開きます。</a></p>
+<p><a class="modal-syncer button-link" data-target="modal-content-02">クリックすると、2つ目のモーダルウィンドウを開きます。</a></p>
+<p><a class="modal-syncer button-link" data-target="modal-content-03">クリックすると、3つ目のモーダルウィンドウを開きます。</a></p>
+<!-- 3つ目のコンテンツ [終了] -->
+
+
+<HR style="margin: 3em 0 ;">
+
+
+
+<p style="text-align:center"><a href="https://syncer.jp/jquery-modal-window">配布元: Syncer</a></p>
+
+
+
+
+<!-- JavaScriptの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="modal-multi.js"></script>
+
+
+
+
+</body>
+</html>

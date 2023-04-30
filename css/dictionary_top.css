@@ -1,0 +1,10 @@
+/*背景画像*/
+div.container-bg{
+  background-image:url("../img/top_bg2.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10vh;
+}

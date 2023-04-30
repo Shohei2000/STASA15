@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <!-- CSSのみ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- JavaScriptと依存ライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<button type="button" class="btn btn-primary rounded"
+		data-toggle="modal" data-target="#modal1" data-backdrop="static">
+		ミッション</button>
+
+  <button class="btn btn-primary rounded" onclick="location.href='./header.html'">ヘッダー</button>
+
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+		aria-labelledby="label1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content pt-4 pl-4 pr-4" style="background: #efffef; border-radius:25px; text-align:center;">
+
+				<div class="container mission_top" id="mission_top">
+
+					<div class="row">
+						<div class="col-12" style="text-align: center;">
+
+							<div class="row">
+								<div class="col-6"
+									style="border-radius: 25px 25px 0 0; background: #9effce;">
+									<h6 class="modal-title" id="title-tab" style="padding: 10% 0; color:#009933;"><a id="dailyBtn" onclick="clickDailyBtn1();">デイリー</a></h6>
+								</div>
+								<div class="col-6"
+									style="border-radius: 25px 25px 0 0; background: #9eff9e;">
+									<h6 class="modal-title" id="title-tab" style="padding: 10% 0; color:#009933;"><a id="specialBtn" onclick="clickSpecialBtn1();">スペシャル</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row bg-light" style="height:21rem; overflow-y: scroll;">
+						<div class="col-12" id="d_mission">
+
+              <div class="row d_mission m-2 rounded" id="mission" style="background:#e0ffe0; display:flex; position: relative;">
+								<div class="col-8 text-center mission-noclear">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center mission-noclear">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1" onclick="clickDetailBtn1()">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1" onclick="clickReceiveBtn1()">受取</button>
+										</div>
+									</div>
+								</div>
+
+				                <div id="mission-clear" style="display:none;">
+				                    <img class="receive_pic" src="./img/Atumori.png" alt="recived_pic" style="width: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+								</div>
+
+							</div><!-- d_mission-row -->
+
+
+              <div class="row d_mission m-2 rounded" id="mission" style="background:#e0ffe0; display:flex;">
+								<div class="col-8 text-center ">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1" onclick="clickDetailBtn1()">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- d_mission-row -->
+
+              <div class="row d_mission m-2 rounded" id="mission" style="background:#e0ffe0; display:flex;">
+								<div class="col-8 text-center">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- d_mission-row -->
+
+              <div class="row d_mission m-2 rounded" id="mission" style="background:#e0ffe0; display:flex;">
+								<div class="col-8 text-center">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- d_mission-row -->
+
+              <div class="row d_mission m-2 rounded" id="mission" style="background:#e0ffe0; display:flex;">
+								<div class="col-8 text-center">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- d_mission-row -->
+
+							<div class="row d_mission m-2 rounded" style="background:#e0ffe0; display:flex;">
+								<div class="col-8 text-center">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>クイズに答える</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- d_mission-row -->
+
+            <!-- デイリー or ミッション -->
+
+						<div class="col-12" id="s_mission" style="display:none;">
+							<div class="row s_mission m-2 rounded" style="background:#e0ffe0;">
+								<div class="col-8 text-center">
+									<div class="row h-100" style="align-content: center;">
+										<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+											<p>ボランティアに参加</p>
+										</div>
+										<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+											<!-- <p>0/5</p> -->
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:50%;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 text-center">
+									<div class="row">
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info detail_button1">詳細</button>
+										</div>
+										<div class="col-12 p-1">
+											<button type="button"
+												class="btn-outline-info receive_button1">受取</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- s_mission-row -->
+
+            <div id="mission-clear" style="display:none;">
+              <img class="receive_pic" src="./img/Atumori.png" alt="recived_pic" style="width: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+					</div>
+
+						<a href="" class="btn btn--green close" onclick="clickCloseBtn1()" data-dismiss="modal" aria-label="Close">閉じる</a>
+				</div><!-- container -->
+
+        <!-- -------------------地平線----------------------- -->
+
+        <div class="container mission_detail" id="mission_detail" style="display:none;">
+          <div class="row bg-light" style="height:24rem;">
+          	<div class="col-12">
+
+	          	<div class="row">
+		          	<div class="col-12 quiz-title">
+		          		<h1 class="m-0">クイズに答える</h1>
+		          	</div>
+	          	</div>
+
+	          	<div class="row">
+		          	<div class="col-12 quiz-progress">
+		          		<p class="">0/5</p>
+		          	</div>
+	          	</div>
+
+	          	<div class="row">
+					<div class="col-12 progress" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:25%;"></div>
+					</div>
+	          	</div>
+
+	          	<div class="row">
+		          	<div class="col-12 quiz-detail">
+		            	<h2 class="m-0">クイズに答えよう！</h2>
+		            </div>
+	          	</div>
+
+	          	<div class="row">
+		          	<div class="col-12 quiz-prize p-1">
+		            	<p>達成品</p>
+		            </div>
+	          	</div>
+
+	          	<div class="row">
+		          	<div class="col-12 quiz-prizeImg">
+		            	<div class="img-container">
+							<img class="point-picture w-100 h-100" src="./img/point_coin.png" alt="point">
+		            	</div>
+		            </div>
+	          	</div>
+
+          	</div>
+
+           </div><!-- row bg-light -->
+
+          <a class="btn btn--green close" onclick="clickBackBtn1()">戻る</a>
+        </div> <!-- container mission_detail -->
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+	var d = document.getElementById("d_mission"); // 変数定義
+	var s = document.getElementById("s_mission"); // 変数定義
+
+	var m_top = document.getElementById("mission_top"); // 変数定義
+	var m_detail = document.getElementById("mission_detail"); // 変数定義
+
+	var m_clear = document.getElementById("mission-clear"); // 変数定義
+	var m_noclear = document.getElementsByClassName("mission-noclear"); // 変数定義
+
+	var d_button = document.getElementsByClassName("detail_button1");
+	var r_button = document.getElementsByClassName("receive_button1");
+
+	//-----------------------------------------------------------------------------
+
+	d.style.display ="block"; // 初期設定
+	s.style.display ="none"; // 初期設定
+
+	m_top.style.display ="block"; // 初期設定
+	m_detail.style.display ="none"; // 初期設定
+
+	m_clear.style.display ="none"; // 初期設定
+
+	//-----------------------------------------------------------------------------
+
+	function clickDailyBtn1(){ // デイリータブ投下時
+
+		d.style.display = "block";
+		s.style.display = "none";
+
+		console.log("でいりー");
+	}
+
+	function clickSpecialBtn1(){ // スペシャルータブ投下時
+
+		d.style.display = "none";
+		s.style.display = "block";
+
+		console.log("すぺしゃる");
+	}
+
+	function clickCloseBtn1(){ // 閉じるボタン投下時
+
+		d.style.display = "block";
+		s.style.display = "none";
+
+		console.log("とじる");
+	}
+
+	function clickDetailBtn1(){ // 詳細ボタン投下時
+
+		m_top.style.display = "none";
+		m_detail.style.display = "block";
+
+		console.log("しょうさい");
+	}
+
+	function clickBackBtn1(){ // 戻るボタン投下時
+
+		m_top.style.display = "block";
+		m_detail.style.display = "none";
+
+		console.log("戻る");
+	}
+
+	function clickReceiveBtn1(){ // 受取ボタン投下時
+
+		m_noclear[0].style.opacity = 0.2;
+		m_noclear[1].style.opacity = 0.2;
+ 		d_button[0].disabled = true;
+		r_button[0].disabled = true;
+		m_clear.style.display = "block";
+
+		console.log("受取");
+	}
+
+</script>
+
+</html>

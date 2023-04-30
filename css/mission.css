@@ -1,0 +1,14 @@
+.mission{
+  text-align: center;
+  border-radius:50%;
+  border:solid 3px;
+  border-color:#c0c0c0;
+  color:#c0c0c0;
+  width:60%;
+  margin:0 auto;
+}
+
+.btn-outline-info{
+    border: 1px solid;
+    padding: 0 1rem;
+}

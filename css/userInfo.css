@@ -1,0 +1,71 @@
+/**/
+.title{
+  text-decoration: underline;
+    margin-bottom: 0%;
+}
+
+.field{
+  margin-top: 5px;
+  margin-bottom: 0%;
+  color:darkgrey;
+}
+
+.info{
+  margin-left: 25px;
+  margin-bottom: 0%;
+}
+
+a.btn_change{
+ display: inline-block;
+ width: 80px;
+ height: 50px;
+  color: #5a5a5a;
+  border:solid #c0c0c0;
+  background: #dcdcdc;
+  padding: 10px 0px 10px 0px;
+}
+
+input.btn_change{
+ display: inline-block;
+ width: 80px;
+ height: 50px;
+  color: #5a5a5a;
+  border:solid #c0c0c0;
+  background: #dcdcdc;
+  padding: 10px 0px 10px 0px;
+}
+a.btn_back{
+ display: inline-block;
+ width: 80px;
+ height: 50px;
+  color: #5a5a5a;
+  border:solid #c0c0c0;
+  background: #dcdcdc;
+  padding: 10px 0px 10px 0px;
+}
+
+a.btn_top{
+   display: inline-block;
+ width: 150px;
+ height: 40px;
+  color: #5a5a5a;
+  border:solid #c0c0c0;
+  background: #ededed;
+  padding: auto 0px auto 0px;
+}
+
+.btn_alt{
+ display: inline-block;
+ width: 80px;
+ height: 50px;
+  color: #5a5a5a;
+  border:solid #c0c0c0;
+  background: #dcdcdc;
+  border-radius : 5%;
+  padding: 10px 0px 10px 0px;
+}
+
+.form_input{
+  margin-left: 7%;
+}
+

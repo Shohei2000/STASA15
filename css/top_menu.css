@@ -1,0 +1,249 @@
+/* 下地 */
+html {
+  height: 100%;
+	margin: 0;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+
+/* This is a CSS file */
+.inner{
+/*  background-color:#c1ffc1;*/
+}  
+
+.btn--green,
+a.btn--green {
+  color: #009933;
+  background-color: #9eff9e;
+  margin: 1rem;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+} */
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  /* position: relative; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  /* vertical-align: middle; */
+  text-decoration: none;
+  /* letter-spacing: 0.1em; */
+  color: #212529;
+  border-radius: 0.5rem;
+  /* margin:0 auto; */
+}
+
+a.btn-emergency {
+  position: relative;
+
+  display: block;
+
+  width: 110px;
+  height: 30px;
+  margin:auto;
+}
+
+a.btn-emergency:hover .btn-emergency-top {
+  top: 20px;
+
+  height: 30px;
+}
+
+a.btn-emergency:active .btn-emergency-top {
+  top: 20px;
+
+  height: 40px;
+}
+
+
+.btn-emergency-top:before {
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  width: 110px;
+  height: 30px;
+
+  content: "";
+
+  border-radius: 70px / 20px;
+  /* background: #ed4c4c; */
+  background:linear-gradient(45deg, #ed4c4c 0%, #ef6363 45%, #f49292 70%, #ef6363 85%, #ed4c4c 90% 100%);
+  
+}
+
+.btn-emergency-top {
+  position: absolute;
+  top: 0;
+  left: 15px;
+
+  width: 110px;
+  height: 50px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  /* background: #d62d2d; */
+  background:linear-gradient(45deg, #d62d2d 0%, #da4242 45%, #e26d6d 70%, #da4242 85%, #d62d2d 90% 100%);
+  border-bottom: medium solid black;
+  
+}
+
+.btn-emergency-top span {
+  font-size: 20px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -15px;
+  /* left: 0; */
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+  text-align: center;
+
+  /* color: #f6a3a3; */
+  color:#fff4f4;
+
+  
+}
+
+.btn-emergency-bottom {
+  position: absolute;
+  top: 30px;
+  /* left: 0; */
+
+  width: 140px;
+  height: 56px;
+
+  border-radius: 100px / 40px;
+  background: linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+  -webkit-box-shadow: 0 8px 0 #4d4d4d;
+  box-shadow: 0 8px 0 #4d4d4d;
+
+  /* background: #d8e4ea;
+  -webkit-box-shadow: 0 8px 0 #c4cacc;
+  box-shadow: 0 8px 0 #c4cacc; */
+}
+
+.top-img-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+img.animals{
+  width:100%;
+  border: solid darkseagreen 10px;
+  border-radius: 0.5rem;
+}
+
+.credit {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    color: white;
+    font-size: 0.5rem;
+}
+
+#gatya{
+  margin-left:30%;
+  margin-right:30%;
+}  
+
+#ranking{
+  
+  margin-top:10%;
+  margin-bottom:10%;
+  margin-left:0;
+} 
+
+#mission{
+  
+  margin-top:10%;
+  margin-bottom:10%;
+  margin-right:8%;
+} 
+
+#index{
+  margin-left:30%;
+  margin-right:30%;
+} 
+
+#ranking,#mission{
+  display: inline-block;
+}  
+
+.side{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*背景画像*/
+div.container-bg{
+  background-image:url("../img/top_bg2.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+.top_font {
+    color: white;
+}
+
+.btn-square-pop {
+  position: relative;
+  text-decoration: none;
+  color: #FFF;
+  background: darkseagreen;/*背景色*/
+  border: outset 3px ghostwhite;/*少し薄め目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  width: 7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.btn-square-pop:active {
+  border-bottom: solid 2px ghostwhite;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+  color: white;
+}

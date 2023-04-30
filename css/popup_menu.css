@@ -1,0 +1,84 @@
+.menu_row{
+  border-radius:20px;
+  border:solid 2px;
+  border-color:#d3d3d3;
+  background:white;
+  padding:4px 0;
+}
+
+.parts{
+    padding: 1vh 0;
+    margin: 0;
+  display:flex;
+  align-items:center; /*上下中央揃え*/
+  justify-content: center; /*左右中央揃え*/
+  height:100%;
+  color:black;
+}
+
+.original{
+  border-radius:40px;
+  border:solid 3px;
+  border-color:#d3d3d3;
+  background:#ff8989;
+  padding-top:11px;
+  padding-bottom:9px;
+  width:80%;
+  text-align:center;
+  margin:0 auto;
+}
+
+.menu{
+  border-radius:40px;
+  border:solid 3px;
+  border-color:#d3d3d3;
+  background:#89c4ff;
+  color:white;
+  padding-top:11px;
+  padding-bottom:9px;
+  width:60%;
+  position:absolute;
+  right:20%;
+  left:20%;
+  top:-5%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+#Audio-Control {
+  overflow: hidden;
+}
+
+#Audio-Control button {
+  border: 1px solid #ccc;
+  width: 40px;
+  float: left;
+  padding: 5px 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+#Audio-Control button.on {
+  border-left: none;
+}
+
+#Audio-Control button.off {
+  border-right: none;
+}
+
+#Audio-Control button.active {
+  background: #ccc;
+}
+
+#Audio-Control button:not(.active):hover {
+  background: rgba(204, 204, 204, 0.3);
+}

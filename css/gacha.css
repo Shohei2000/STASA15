@@ -1,0 +1,140 @@
+/* 下地 */
+html, body {
+	height: 90%;
+	margin: 0;
+}
+
+/* 文字色統一 */
+.gacha-font {
+	color: black;
+	font-weight: bold;
+    font-size: 6vw;
+}
+
+/* ------------------------------------------- */
+
+div.container-bg{
+  background-image:url("../img/top_bg2.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+/* ------------------------------------------- */
+
+/* ガチャ画面カルーセル(スライド)用CSS */
+#myCarousel {
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+.carousel-container {
+    width:90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-item, .carousel-img {
+    width: 100%;
+}
+
+.credit {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    font-size: 0.5rem;
+}
+
+/* ------------------------------------------- */
+
+/* 詳細ボタン */
+.detail_button, .detail_button:hover {
+	display: inline-block;
+	width: 10rem;
+	height: 3rem;
+	line-height: 3rem;
+	margin: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.row-img {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.row-img900 {
+	width: 100%;
+	margin: 0 auto;
+    text-align:center;
+}
+
+.getAnimalImage {
+	width: 80vw;
+}
+
+.getAnimalImage900 {
+	width: 25vw;
+}
+
+/* ------------------------------------------- */
+
+/* 1回と10回のガチャ画面のボタン */
+.btn--gacha, a.btn--gacha {
+	color: seagreen;
+	background-color: white;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+    border: solid darkseagreen 2px;
+}
+
+.btn--gacha:hover, a.btn--gacha:hover {
+	color: seagreen;
+	background: #efffef;
+}
+
+/* 1回と10回ボタン用 */
+a.btn--radius {
+	border-radius: 2vh;
+	min-height: 3rem;
+    min-width:30vw;
+}
+
+/* モーダルウィンドウ内のOKとキャンセルのボタン用 */
+a.btn-modal {
+	border-radius: 2vh;
+	font-size: 1rem;
+	min-height: 3rem;
+	width: 45%;
+    border: solid darkseagreen 2px
+}
+
+/* ------------------------------------------- */
+.container-img {
+    position: relative;
+}
+
+.credit {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    font-size: 0.5rem;
+}
+
+.credit900 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 0.3rem;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy"
+	content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+<script src="components/loader.js"></script>
+<script src="components/modal.js"></script>
+
+<link rel="stylesheet" href="components/loader.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/gacha.css">
+
+<!-- CSSのみ -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+	integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+	crossorigin="anonymous">
+<!-- JavaScriptと依存ライブラリ -->
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+	integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+	crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-dark bg-dark"
+		style="height: 10vh; justify-content: center;">
+		<div class="row w-100">
+			<div class="col-4 text-left">
+				<p class="navbar-brand m-0 p-0 pl-3">とよぴま</p>
+			</div>
+			<div class="col-4 text-center">
+				<p class="navbar-brand m-0 p-0">1</p>
+			</div>
+			<div class="col-4 text-right"
+				style="display: flex; justify-content: right; align-items: center;">
+				<p class="navbar-brand m-0 p-0 pr-3" style="float: left;">50pt</p>
+				<a><i class="fas fa-cog"
+					style="color: white; display: flex; align-items: center; height: 100%;"></i></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container container-bg w-100 h-100" style="margin-top: 10vh;">
+
+		<div class="row container-main">
+			<div class="col-12">
+				<!-- ガチャ画面上部 -->
+				<div class="row">
+					<div class="col-12 text-center">
+
+						<h1 class="p-0 m-0 gacha-font" style="margin:0; font-size:3rem;">動物ガチャ</h1>
+
+						<p class="p-0 gacha-font m-3 h6">
+							動物をゲットして<br>図鑑を完成させよう！！
+						</p>
+
+					</div>
+				</div>
+
+				<!-- カルーセル開始 -->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+						<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="carousel-container1 carousel-container">
+								<img class="carousel-img" src="./img/animal1.jpg">
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="carousel-container2 carousel-container">
+								<img class="carousel-img" class="carousel-img"
+									src="./img/animal2.jpg">
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="carousel-container3 carousel-container">
+								<img class="carousel-img" src="./img/animal3.jpg">
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="carousel-container1 carousel-container">
+								<img class="carousel-img" src="./img/animal4.jpg">
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="carousel-container1 carousel-container">
+								<img class="carousel-img" src="./img/animal5.jpg">
+							</div>
+						</div>
+
+					</div>
+
+					<a class="carousel-control-prev" href="#myCarousel" role="button"
+						data-slide="prev"> <span class="carousel-control-prev-icon"
+						aria-hidden="true"></span> <span class="sr-only">Previous</span>
+					</a> <a class="carousel-control-next" href="#myCarousel" role="button"
+						data-slide="next"> <span class="carousel-control-next-icon"
+						aria-hidden="true"></span> <span class="sr-only">Next</span>
+					</a>
+				</div>
+				<!-- カルーセル終了 -->
+
+				<div class="row">
+					<!-- モーダルウィンドウ -->
+					<div class="col-12">
+						<div class="modal fade w-100" id="modal1" tabindex="-1"
+							role="dialog" aria-labelledby="label1" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content p-4 w-75"
+									style="background: #efffef; border-radius: 25px; text-align: center; margin: 0 auto;">
+
+									<div class="container gacha_check" id="gacha_check">
+
+										<div class="row">
+											<div class="col-12" style="text-align: center;">
+
+												<div class="row">
+													<h1 class="mb-3">確認</h1>
+													<p class="mb-3">1回引きます</p>
+													<h3 class="mb-3">消費P:10pt</h3>
+												</div>
+											</div>
+										</div>
+
+										<a href="gacha_result.html" class="btn btn--gacha btn-modal">OK</a>
+										<a class="btn btn--gacha btn-modal" data-dismiss="modal" aria-label="Close">戻る</a>
+
+									</div>
+									<!-- container gacha-check -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- モーダルウィンドウ -->
+
+				<div class="row p-2" style="width: 90vw; margin: 0 auto; background:#f9fff9;">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 text-center">
+								<p class="m-0 gacha-font">所持ポイント</p>
+								<p class="m-0 gacha-font">5pt</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 text-center p-2">
+								<a href="" class="btn btn--gacha btn--radius mr-1"
+									data-toggle="modal" data-target="#modal1"
+									data-backdrop="static">1回<br>消費P:10
+								</a> <a href="gacha_result.html"
+									class="btn btn--gacha btn--radius ml-1">10回<br>消費P:90
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- container-fluid -->
+
+	<nav class="navbar fixed-bottom navbar-dark bg-dark"
+		style="height: 10%;">
+		<a class="navbar-brand" href="#">Fixed bottom</a>
+	</nav>
+</body>
+
+<script type="text/javascript">
+</script>
+
+</html>
